@@ -33,3 +33,7 @@ p{
     width:500px;
     height:550px;
 }
+input[type=submit]{
+    background-color: chartreuse;
+    width:100px
+}

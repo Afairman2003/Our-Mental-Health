@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="style.css">
     <title>Document</title>
 </head>
 <body>
-<form>      <label for="fname">First name:</label><br>
+    <form
+    action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+    method="post"
+   >
+   
+    <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
     <input type="text" id="lname" name="lname">
-    <input type="submit" value="Submit">
+    
 
     <br><p>Choose your disorder:</p>
-    <input type="radio" id="html name="depression" value="HTML"
+    <input type="radio" id="html" name="disorders" value="Depression">Depression
+    <input type="radio" id="html" name="disorders" value= "Anxiety">Anxiety
+    <input type="radio" id="html" name="disorders" value= "Eating Disorder">Eating Disorder
+
+    <br><p>Choose your treatment </p>
+    <input type="checkbox" id="html" name="treatments" value="Therapy">Therapy
+    <input type="checkbox" id="html" name="treatments" value="Psychotherapy">Psychotherapy
+    <input type="checkbox" id="html" name="treatments" value= "medications"> Medications
+
+    <input type="submit" value="submit">
+
+<input name="send-to" value="afairman@brooklynsteamcenter.org" hidden>
 </form>
