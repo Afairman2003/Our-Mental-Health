@@ -9,6 +9,9 @@ body{
 
 
 }
+hr{
+    border:red solid 2px;
+}
 .navlinks li{ 
     display: inline-block;
     box-sizing: border-box;
